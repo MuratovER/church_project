@@ -120,9 +120,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'imodb',
-        'USER': 'imo',
-        'PASSWORD': 'imoproject',
+        'NAME': 'churchdb',
+        'USER': 'church',
+        'PASSWORD': 'churchproject',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -136,9 +136,9 @@ DATABASES = {
 
 Пользователь, которого нужно создать:
 
-login: ```imo```
+login: ```church```
 
-password: ```imoproject```
+password: ```churchproject```
 
 ### Создание базы данных
 
@@ -157,11 +157,11 @@ psql
 
 Ввести команды для создания пользователя и содания базы данных
 ```
-CREATE USER imo;
+CREATE USER church;
 
-ALTER USER imo WITH PASSWORD 'imoproject';
+ALTER USER church WITH PASSWORD 'churchproject';
 
-CREATE DATABASE imodb OWNER imo;
+CREATE DATABASE church db OWNER church;
 ```
 
 
